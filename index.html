@@ -1,0 +1,11 @@
+<script>
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (/android/i.test(userAgent)) {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.jsdriver.taxi.rider.cliente&pcampaignid=web_share";
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.location.href = "https://apps.apple.com/do/app/jsdriver/id6711329856"; 
+    } else {
+    window.location.href = "https://tusitio.com"; // fallback para escritorio
+  }
+</script>
